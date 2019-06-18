@@ -7,7 +7,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## How to use
 
-1. `Start with [entity-graphql-server](https://github.com/brucean52/entity-graphql-server)`
+1. Start with [entity-graphql-server](https://github.com/brucean52/entity-graphql-server)
 2. `npm install`
 3. `npm start`
 3. `localhost:3000` - React Application
