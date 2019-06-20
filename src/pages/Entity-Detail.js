@@ -29,6 +29,7 @@ class EntityDetail extends Component {
             return(
               <div key={index} className="property-container">
                 <h5 className='prop-name'>{property.name ? 'Name: '+ property.name  : null}</h5>
+                <h5 className='prop-description'>{property.description ? 'Description: '+ property.description  : null}</h5>
                 <h5 className='prop-datatype'>{property.datatype ? 'Data Type: '+ property.datatype  : null}</h5>
                 <h5 className='prop-ref'>{property.ref ? 'Ref: '+ property.ref  : null}</h5>
               </div>
@@ -75,6 +76,7 @@ const GET_ENTITY = gql`
         wordLexicon
         properties {
           name
+          description
           datatype
           ref
         }
