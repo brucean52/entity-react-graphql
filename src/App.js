@@ -4,7 +4,7 @@ import { Route, Link } from 'react-router-dom';
 import Button from 'antd/lib/button';
 import Home from './pages/Home';
 import EntityDetail from './pages/Entity-Detail';
-import Test from './pages/Test';
+import DiagramComponent from './pages/Diagram';
 import './App.scss';
 
 function App() {
@@ -16,13 +16,13 @@ function App() {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/test">GraphQL Test</Link>
+            <Link to="/diagram">Diagram</Link>
           </li>
         </ul>
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/entities/:title" component={EntityDetail}/>
-        <Route path="/test" exact component={Test} />
+        <Route path="/diagram" exact component={DiagramComponent} />
       </Switch>
     </div>
   );
